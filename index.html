@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Abdullah</title>
-<meta name="description" content="Abdullah — an independent engagement with financial markets." />
+<title>Abdullah — Independent Research</title>
+<meta name="description" content="Abdullah's independent equity research, deal commentary, and credit &amp; special situations analysis — modeled and dated as it develops." />
+<meta property="og:title" content="Abdullah — Independent Research" />
+<meta property="og:description" content="Independent equity research, deal commentary, and credit &amp; special situations analysis — modeled and dated as it develops." />
+<meta property="og:type" content="website" />
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +18,75 @@
 
 <canvas id="bg"></canvas>
 
-<main class="wrap">
-  <div class="content">
-    <p class="eyebrow">an independent study of markets</p>
-    <h1 class="name">Abdullah</h1>
-    <div class="rule"></div>
-    <p class="intro">
-      This page exists as an extension of my own engagement with the markets —
-      a place to develop and refine the skills, judgment, and quieter nuances
-      that come with actually understanding them, not just describing them.
-      It isn't a résumé, and it isn't a pitch. It's the process itself, kept
-      here as it unfolds.
-    </p>
-    <a class="contact" href="https://www.linkedin.com/in/abdullah-baig-444362235/" target="_blank" rel="noopener noreferrer">
-      <span>Connect on LinkedIn</span>
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-  </div>
-  <footer class="foot">&copy; <span id="year"></span> Abdullah</footer>
+<div class="wrap">
+<header class="site-header">
+  <a class="brand" href="index.html">Abdullah</a>
+  <nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="equity-research/index.html">Equity Research</a></li>
+      <li><a href="deal-commentary/index.html">Deal Commentary</a></li>
+      <li><a href="credit-special-situations/index.html">Credit &amp; Special Situations</a></li>
+      <li><a href="track-record.html">Models &amp; Track Record</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">an independent study of markets</p>
+      <h1 class="name">Abdullah</h1>
+      <div class="rule"></div>
+      <p class="intro">
+        This is a running record of independent equity research, deal commentary,
+        and credit &amp; special-situations analysis — modeled, dated, and published
+        as it develops. It isn't a résumé, and it isn't a pitch. Every piece here
+        carries the underlying model, so the work can be checked rather than
+        taken on faith.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="track-record.html">
+          <span>See the track record</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/abdullah-baig-444362235/" target="_blank" rel="noopener noreferrer">
+          <span>Connect on LinkedIn</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page page-narrow" style="padding-top:0;">
+    <div class="card-list">
+      <a class="card" href="equity-research/index.html">
+        <div class="card-top"><span class="tag">Equity Research</span></div>
+        <h3>Full company theses, with the model attached</h3>
+        <p>Long-form deep dives — view, valuation, bear case, and a downloadable DCF behind every call. Published roughly every 6–8 weeks.</p>
+      </a>
+      <a class="card" href="deal-commentary/index.html">
+        <div class="card-top"><span class="tag">Deal Commentary</span></div>
+        <h3>Timely reactions to real, announced transactions</h3>
+        <p>Stated rationale versus the actual read, a quick valuation check, and financing implications. Published roughly every 3–4 weeks.</p>
+      </a>
+      <a class="card" href="credit-special-situations/index.html">
+        <div class="card-top"><span class="tag">Credit &amp; Special Situations</span></div>
+        <h3>Capital structure and distressed analysis</h3>
+        <p>Capital structure breakdowns, recovery waterfalls, and likely restructuring paths.</p>
+      </a>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <p class="disclaimer">Educational content only — not investment advice or a solicitation to buy or sell any security.</p>
+  <p class="copyright">&copy; <span data-year></span> Abdullah</p>
+</footer>
+</div>
 
 <script src="script.js"></script>
 </body>
